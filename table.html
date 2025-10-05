@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Page</title>
+</head>
 
-<body text="#800080" bgcolor="#FFF0F5" link="#C71585" alink="#800080" vlink="#4B0082" align="justify">
+<body text="#800080" bgcolor="#FFF0F5" link="#C71585" alink="#800080" vlink="#4B0082">
     <a href="./main_page.html"> Пряжа налюбой вкус </a> <br>
     <a href="./table.html"> Список пряжи </a>
     <hr color="#C71585">
@@ -50,17 +54,17 @@
                     <input type="text" name="type" id="type">
                 </label></p>
             <p><label>Длина нити, м: от
-                    <input type="number" name="length" id="start" value="33" min="33" max="900">
+                    <input type="number" name="length" id="min_l" value="33" min="33" max="900">
                 </label> 
                 <label>до
-                    <input type="number" name="length" id="end" value="900" min="33" max="900">
+                    <input type="number" name="length" id="max_l" value="900" min="33" max="900">
                 </label>
             </p>
             <p><label>Вес, г: от
-                    <input type="number" name="weight" id="start" value="25" min="25" max="320">
+                    <input type="number" name="weight" id="min_w" value="25" min="25" max="320">
                 </label> 
                 <label>до
-                    <input type="number" name="weight" id="end" value="320" min="25" max="320">
+                    <input type="number" name="weight" id="max_w" value="320" min="25" max="320">
                 </label>
             </p>
             <p><label>Производитель:
@@ -108,7 +112,7 @@
             <p><input type="submit" value="Сортировать"></p>
         </form>
     </details>
-    <table border="5" cellspacing="0" cellpadding="3" bordercolor="#4B0082">
+    <table border="2" cellspacing="0" cellpadding="3">
         <tr align="center">
             <th>
                 №
