@@ -1,7 +1,115 @@
 <!DOCTYPE html>
-<body>
-    <table border="5" cellspacing="0" cellpadding="3">
-        <tr>
+<html>
+
+<body text="#800080" bgcolor="#FFF0F5" link="#C71585" alink="#800080" vlink="#4B0082" align="justify">
+    <a href="./main_page.html"> Пряжа налюбой вкус </a> <br>
+    <a href="./table.html"> Список пряжи </a>
+    <hr color="#C71585">
+    <details>
+        <summary> График </summary>
+        <form>
+            <table align="justify">
+                <tr align="center">
+                    <th>Значение по оси OX</th>
+                    <th>Результат</th>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <input type="radio" name="type"> Вид пряжи <br>
+                        <input type="radio" name="composition"> Состав <br>
+                        <input type="radio" name="manufacturer"> Производитель <br>
+                        <input type="radio" name="country"> Страна производства
+                    </td>
+                    <td>
+                        <input type="checkbox" name="lightest"> Самая легкая пряжа <br>
+                        <input type="checkbox" name="smallest_crochet"> Самый маленький рек. крючок <br>
+                        <input type="checkbox" name="smallest_needles"> Самые маленькие рек. спицы <br>
+                        <input type="checkbox" name="shortest"> Самая короткая пряжа <br>
+                        <input type="checkbox" name="heaviest"> Самая тяжелая пряжа <br>
+                        <input type="checkbox" name="biggest_crochet"> Самый большой рек. крючок <br>
+                        <input type="checkbox" name="biggest_needles"> Самые большие рек. спицы <br>
+                        <input type="checkbox" name="longest"> Самая длинная пряжа<br>
+                        <input type="checkbox" name="colors"> Количество цветов
+                    </td>
+                </tr>
+            </table>
+            <p><input type="submit" value="Построить"></p>
+            <p>Здесь будет график</p>
+        </form>
+    </details>
+    <details>
+        <summary> Фильтр </summary>
+        <form>
+            <p><label>Название:
+                    <input type="text" name="name" id="name">
+                </label></p>
+            <p><label>Состав:
+                    <input type="text" name="composition" id="composition">
+                </label></p>
+            <p><label>Вид пряжи:
+                    <input type="text" name="type" id="type">
+                </label></p>
+            <p><label>Длина нити, м: от
+                    <input type="number" name="length" id="start" value="33" min="33" max="900">
+                </label> 
+                <label>до
+                    <input type="number" name="length" id="end" value="900" min="33" max="900">
+                </label>
+            </p>
+            <p><label>Вес, г: от
+                    <input type="number" name="weight" id="start" value="25" min="25" max="320">
+                </label> 
+                <label>до
+                    <input type="number" name="weight" id="end" value="320" min="25" max="320">
+                </label>
+            </p>
+            <p><label>Производитель:
+                    <input type="text" name="manufacturer" id="manufacturer">
+                </label></p>
+            <p><label>Страна производства:
+                    <input type="text" name="country" id="country">
+                </label></p>
+            <p><input type="submit" value="Найти"></p>
+        </form>
+    </details>
+    <details>
+        <summary> Сортировка </summary>
+        <form>
+            <p>
+                Первый уровень:
+                <select name="first">
+                    <option value="0" selected> нет </option>
+                    <option value="1"> Наименование </option>
+                    <option value="2"> Страна производства </option>
+                </select>
+                по убыванию? 
+                <input type="checkbox" name="des_order">
+            </p>
+            <p>
+                Второй уровень:
+                <select name="second">
+                    <option value="0" selected> нет </option>
+                    <option value="1"> Рек. крючок, мм </option>
+                    <option value="2"> Вес, г </option>
+                </select>
+                по убыванию? 
+                <input type="checkbox" name="des_order">
+            </p>
+            <p>
+                Третий уровень:
+                <select name="third">
+                    <option value="0" selected> нет </option>
+                    <option value="1"> Рек. спицы, мм </option>
+                    <option value="2"> Количество оттенков </option>
+                </select>
+                по убыванию? 
+                <input type="checkbox" name="des_order">
+            </p>
+            <p><input type="submit" value="Сортировать"></p>
+        </form>
+    </details>
+    <table border="5" cellspacing="0" cellpadding="3" bordercolor="#4B0082">
+        <tr align="center">
             <th>
                 №
             </th>
@@ -954,7 +1062,7 @@
                 носочная
             </td>
             <td>
-                25
+                65
             </td>
             <td>
                 секционный
@@ -1942,7 +2050,7 @@
                 44
             </td>
             <td>
-                Семеновская МШФ Kable 
+                Семеновская МШФ Kable
             </td>
             <td>
                 2
@@ -2231,7 +2339,7 @@
             </td>
             <td>
                 6
-            </td>   
+            </td>
             <td>
                 однотонный
             </td>
@@ -2247,3 +2355,5 @@
         </tr>
     </table>
 </body>
+
+</html>
